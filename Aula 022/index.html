@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title> Map </title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <!-- Para conseguirmos usarmos o map na imagem, devemos 
+        usar a tag usemap="#" e colococar o nome do map -->
+        <img src="img/bola.png" usemap="#imagem-mapeada">
+
+        <!-- Criando a Tag <map> -->
+        <!-- Os mapas são compostos por áreas, ou seja, você pode
+        criar um link em uma determinada área da imagem -->
+        <map name="imagem-mapeada">
+            <!-- Usamos o shape para definir o formato da area -->
+            <!-- Para escolher em qual área da imagem queremos 
+            colocar o link, devemos usar as coordenadas da 
+            imagem, colocando a tag coords="aqui vão as coordenadas" -->
+            <area shape="rect">
+            <area shape="circle">
+            <area shape="poly">
+        </map>
+    </body>
+</html>

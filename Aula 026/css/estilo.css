@@ -1,0 +1,15 @@
+.svg{
+    background-color: #ccc;
+}
+
+
+/* Fazendo referência ao rect que está dentro do svg */
+.svg rect{
+    /* Fill define a cor do preenchimento do triângulo */
+    fill: blue;
+    /* Stroke define a borda */
+    stroke: red;
+    stroke-width: 3;
+    /* Podemos adicionar uma opacidade usando o opacity="" */
+    opacity: 0.5;
+}

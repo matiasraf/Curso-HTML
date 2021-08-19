@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title> Mark - Contenteditable </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+    </head>
+    <body>
+        <!-- Para deixarmos uma área do texto editavel, usamos o contenteditable 
+        com ele o usuário consegue editar o texto -->
+        <!-- Quando declaramos a div como sendo contenteditable, tudo que está nela
+        fica editavel, para fazer com que certa parte não fique editavel, usa-se
+        o contenteditable="false" -->
+        <div contenteditable>
+            <h1 contenteditable="false"> Mark - Contenteditable </h1>
+            <!-- Aqui usando o mark conseguimos utilizar destacar uma parte do texto -->
+            <p> Lorem Ipsum é <mark class="mark">simplesmente uma simulação de</mark> texto da indústria tipográfica e de impressos, 
+                e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja 
+                de tipos e os embaralhou para fazer um livro de modelos de tipos.<br> Lorem Ipsum sobreviveu não 
+                só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo 
+                essencialmente inalterado.<br> Se popularizou na década de 60, quando a Letraset lançou decalques 
+                contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares 
+                de editoração eletrônica como Aldus PageMaker.</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title> Tabelas </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/estilo.css"><!--Link para o CSS-->
+    </head>
+    <body>
+        <h1> Tabelas </h1>
+        <!-- Para criar tabelas usa-se a TAG table -->
+        <table>
+            <caption> Cadastro de Clientes </caption> <!-- Título da tabela -->
+            <colgroup> <!-- Utiliza para dar a mesma class para todo o grupo, linha e coluna-->
+                <col class="nome">
+                <col class="email"> 
+                <col class="telefone">
+                <col class="cargo">
+            </colgroup>
+            <!-- Para criar uma linha da tabela usa-se o <tr> -->
+            <thead> <!-- Cabeçario da Tabela -->
+                <tr>
+                    <th> Nome: </th> <!-- Título da primeira coluna -->
+                    <th> Email: </th> <!-- Título da segunda coluna -->
+                    <th> Telefone: </th> <!-- Título da terceira coluna -->
+                    <th> Cargo: </th> <!-- Título da quarta coluna -->
+                </tr>
+            </thead>
+            <tbody> <!-- Conteúdo da tabela -->
+                <tr>
+                    <td> Rodrigo </td> <!-- Corresponde ao primeiro <th> -->
+                    <td> rodrigo@email.com </td> <!-- Corresponde ao segundo <th> -->
+                    <td> (16)99999-9999 </td> <!-- Corresponde ao terceiro <th> -->
+                    <td rowspan="2"> Desenvolvedor Web </td> <!-- Corresponde ao quarto <th> --> 
+                        <!-- Rowsapn diz quantas linhas o item irá utilizar -->
+                </tr>
+                <tr>
+                    <td> Cleber </td> <!-- Corresponde ao primeiro <th> -->
+                    <td> cleber@email.com </td> <!-- Corresponde ao segundo <th> -->
+                    <td> (15)88888-8888 </td> <!-- Corresponde ao terceiro <th> -->
+                </tr>
+            </tbody>
+            <tfoot> <!-- Rodapé da tabela -->
+                <tr>
+                    <td colspan="4"> Total: 2 </td> <!-- O Colspan diz quantas colunas o item irá ocupar -->
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title> Meter - Progress </title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <!-- Criando um medidor usando o <meter> -->
+        <!-- Devemos declarar um valor minimo usando o min="0" -->
+        <!-- Declaramos um valor considerado baixo low="3"-->
+        <!-- Declaramos um valor considerado ótimo optimun="6" -->
+        <!-- Declaramos um valor alto higt="8" -->
+        <!-- Declaramos um valor maximo max="10" -->
+        <!-- E por último um valor a ser representado value="7"-->
+        Barra com valores pré definidos:<br>
+        <meter min="0" low="3" optimum="6" high="8" max="10" value="7"></meter><br>
+
+        <!-- Pode-se representar os valores por porcentagem também -->
+        Barra com porcentagem:<br>
+        <meter value="0.5"></meter><br>
+
+        <!-- Criando uma barra de progresso, ex de download -->
+        <!-- Devemos especificar o valor maximo max=""-->
+        <!--  Devemos colocar o valor que queremos representar value=""-->
+        Barra de Progresso:<br>
+        <progress max="100" value="70">
+    </body>
+</html>

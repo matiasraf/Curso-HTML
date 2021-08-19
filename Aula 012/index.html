@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <title> Formulários </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <!--Link para o CSS-->
+</head>
+
+<body>
+    <div class="formulario">
+        <!-- Usa-se o Form para abrir um formulário, o action seria 
+            para onde as informações seriam enviadas -->
+        <!-- O POST envia as informações sem que o visitante veja -->
+        <form action="cadastro.php" method="GET">
+            <h3 class="titulo"> Informações Pessoais </h3>
+            <fieldset class="borda-form">
+                <!-- Cria um campo para o formulário -->
+
+                <!-- Legend cria uma legenda para o campo do formulário -->
+                <!-- <legend> Informações Pessoais </legend><br> -->
+
+                Nome: <br>
+                <!-- Definimos o tipo do que será digitado, nesse caso um texto -->
+                <!-- Usamos o required para tornar o campo obrigatorio -->
+                <!-- Definimos usando o maxlength definimos o tanto de caracteres que será aceito -->
+                <input type="text" name="nome" placeholder="Nome Completo" required maxlength="30"><br>
+
+                Senha: <br>
+                <!-- Definimos o tipo do que será digitado, nesse caso uma senha  -->
+                <input type="password" name="senha" placeholder="Senha" required><br>
+                <!-- Nesse outro já é um tipo de senha -->
+
+                Email: <br>
+                <!-- Definimos o tipo do que será digitado, nesse caso um email -->
+                <!-- Podemos usar um autocomplete para aparecer um histórico de emails 
+                 para preencher o campo, caso você não queria que apareca deve-se 
+                 usar o autocomplete="off" -->
+                <!-- Para deixar um texto na caixa como guia para o que deve ser escrito pelo usuário
+                 deve-se usar o placeholder="o texto desejado"-->
+                <input type="email" name="email" autocomplete="on" placeholder="seuemail@gmail.com" required><br>
+
+
+                <!-- Criando Input para Telenofe -->
+                Telefone:<br>
+                <input type="tel" name="telefone" placeholder="Ex: (DDD) 99999-9999"><br><br>
+
+
+                <!-- Criando um input para Datas -->
+                <!-- Pode-se usar dois atributos para limitar a data 
+                 min="aaaa/mm/dd" para a data miníma, max="aaaa/mm/dd" para a data máxima-->
+                Data: <br>
+                <input type="date" name="data"><br><br>
+
+                <!-- Criando um campo para Semana -->
+                Semana: <br>
+                <input type="week" name="semana"><br><br>
+
+                <!-- Criando um atributo para Horário -->
+                Horário: <br>
+                <input type="time" name="hora"><br><br>
+
+                <!-- Criando um Input para Dia e Hora -->
+                Data e hora: <br>
+                <input type="datetime-local" name="data-hora"><br><br>
+
+                <!-- Criando um atributo para Mês e Ano -->
+                Mês e Ano:<br>
+                <input type="month" name="mes-ano"><br><br>
+
+                <!-- Criando um input para upload de arquivos -->
+                Imagem: <br>
+                <input type="file" name="imagem"><br><br>
+
+                <!-- Atributo usado para passar parâmetros -->
+                <input type="hidden" name="id"><br>
+
+                <!-- Criando Input para URL's -->
+                URL: <br>
+                <input type="url" name="site"><br>
+
+                <!-- Criando Input para fazer pesquisas -->
+                Pesquisa: <br>
+                <input type="search" name="pesquisa"><br><br>
+
+                <!-- Criando uma área para Textos -->
+                <!-- Podemos utilizar o rows="" para definir o máximo de linhas -->
+                <!-- Podemos utilizar o cols="" para definir o máximo de colunas -->
+                <!-- Para não acusar erros na digitação usa-se o spellcheck="false" -->
+                Mensagem:<br>
+                <textarea name="mensagem" spellcheck="false"></textarea><br><br>
+
+                <!-- Criando um botão -->
+
+                <button type="button"> Clique-me </button><br><br>
+
+                <!-- Criando um select, um botão com opções -->
+                <!-- Podemos agrupar as opções utilizando a tag optgroup-->
+                <!-- Para deixarmos um valor como padrão usa-sea tag selected-->
+                Escolha seu veículo:<br>
+                <select name="veiculo">
+                    <optgroup label="carros">
+                        <option value="camaro"> Camaro </option>
+                        <option value="Hilux" selected> Hilux </option>
+                    </optgroup>
+                    <optgroup label="motos">
+                        <option value="xj6"> XJ6 </option>
+                        <option value="hornet"> Hornet </option>
+                    </optgroup>
+                </select><br><br>
+
+                <!-- Criando uma lista pré definida -->
+                <!-- Criamos uma lista e linkamos ela com o input usando o id da lista no input-->
+
+                Escolha um Curso:<br>
+                <input name="cursos" list="lista-cursos">
+                <datalist id="lista-cursos">
+                    <option value="HTML5">
+                    <option value="CSS3">
+                    <option value="PHP">
+                </datalist><br><br>
+
+
+                <!-- Criamos um campo de alternativas, com o usuário podendo escolher uma opção -->
+
+                <!-- Para que algum campo, quando a página for atualizada, 
+                    ele já aparecer marcado, usa-se o checked -->
+                Time: <br>
+                <input type="radio" name="time" value="lakers" checked> Lakers <br>
+                <input type="radio" name="time" value="heat"> Miami Heat <br>
+                <input type="radio" name="time" value="franca"> Franca <br><br>
+
+                <!-- Criando um checkbox-->
+
+                <!-- Para que algum campo, quando a página for atualizada, 
+                    ele já aparecer marcado, usa-se o checked -->
+                Cores: <br>
+                <input type="checkbox" name="cores" value="verde" checked> Verde <br>
+                <input type="checkbox" name="cores" value="azul"> Azul <br>
+                <input type="checkbox" name="cores" value="vermelho"> Vermelho <br><br>
+
+                <!-- Criando um campo de entrada para um valor numérico -->
+
+                <!-- Para indicar um valor minímo usa-se a Tag min=""-->
+                <!-- Para indicar um valor máximo usa-se a Tag max=""-->
+                <!-- Pode-se usar uma Tag para os valores mudarem em um intervalo, 
+                    por ex de 10 em 10 a Tag para fazer isso é a step="" -->
+                Quantidade: <br>
+                <input type="number" name="quantidade" min="0" max="500" step="10"><br><br>
+
+                <!-- Usamos o range para criar uma barra com slider -->
+                Nível de satisfação:<br>
+                <input type="range" name="quantidade"><br><br>
+
+                <!-- Criando um campo onde o usuário consegue escolher uma cor -->
+
+                Cor: <br>
+                <input type="color" name="cor"><br><br>
+
+                <!-- Botão de enviar -->
+                <input type="submit" name="btn-enviar" value="Enviar"><br>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

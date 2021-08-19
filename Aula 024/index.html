@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title> Menu - MenuItem </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <!-- A tag <menu> representa uma lista de comandos 
+        podendo assim criar um menu de contexto, uma barra
+        de ferramentas e um menu pop-up -->
+
+        <!-- Devemos defir o seu tipo usando o type="" -->
+
+        <!-- O menuitem será exibido quando o usuário
+        clicar com o botão direito em algum objeto 
+        Sendo assim criamos uma DIV para o menu aparecer
+        quando clicarmos nela -->
+
+        <!-- Precisamos declarar que o menu será usado na div
+        através do atributo contextmenu="aqui vai o ID do menu"-->
+
+        <div class="elemento" contextmenu="meu-menu"></div>
+        <menu type="contexto" id="meu-menu">
+            <menuitem> Atualizar </menuitem>
+            <menuitem lang="siga-nos">
+                <menuitem icon="img/instagram.png"> Instagram </menuitem>
+                <menuitem icon="img/google.png"> Google </menuitem>
+            </men>
+        </menu>
+    </body>
+</html>

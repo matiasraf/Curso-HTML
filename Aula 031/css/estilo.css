@@ -1,0 +1,8 @@
+.svg{
+    background-color: #ccc;
+}
+
+.svg polyline{
+    stroke: red;
+    stroke-width: 5;
+}

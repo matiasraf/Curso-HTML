@@ -1,0 +1,10 @@
+.svg{
+    background-color: #ccc;
+}
+
+
+/* Fazendo referência ao rect que está dentro do svg */
+.svg text{
+    /* Fill define a cor do preenchimento do texto */
+    fill: red;
+}
